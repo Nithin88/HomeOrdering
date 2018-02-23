@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="HomeOrder">245bc7a00f0c5300899c3e4ce1050e28</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="x_171481_homeorder_availability">order_today=true^EQ<item endquery="false" field="order_today" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Today's orders</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_171481_homeorder_availability</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-31 07:36:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5c2154f80fcc5300899c3e4ce1050e64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Today's orders</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+        <sys_update_name>sys_app_module_5c2154f80fcc5300899c3e4ce1050e64</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-31 07:36:21</sys_updated_on>
+        <timeline_page/>
+        <title>Today's orders</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

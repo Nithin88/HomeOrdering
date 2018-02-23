@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_171481_homeorder.CalcuAvailQty</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>CalcuAvailQty</name>
+        <script><![CDATA[var CalcuAvailQty = Class.create();
+CalcuAvailQty.prototype = {
+	initialize: function() {
+	},
+	medicine: function() {
+		//Get value of property and Convert to Int
+		var propvalue = parseInt(gs.getProperty('x_171481_homeorder.item.orderdays'),10);
+		
+		var grMAvailable = new GlideRecord('x_171481_homeorder_availability');
+	    grMAvailable.addQuery('type','Medicine');
+		grMAvailable.query();
+		while(grMAvailable.next())
+			{
+			//gs.addInfoMessage('Calculating availability for Tablet ' + grAvailable.item.getDisplayValue());
+			var grMItem = new GlideRecord('x_171481_homeorder_item');
+			grMItem.addQuery('name', grMAvailable.item.getDisplayValue());
+			
+			grMItem.query();
+			if(grMItem.next()){
+				var todays_dosage = grMItem.dosage_qty_used * grMItem.frequency;
+				var todays_qty =  grMItem.qty_available -  todays_dosage;
+				var order_today = false;
+				var available_after_2_days = false;
+				
+				if(todays_qty <= todays_dosage + propvalue)
+					{
+					order_today = true;
+					available_after_2_days = false;
+				}
+				else
+					{
+					order_today = false;
+					available_after_2_days = true;
+				}
+				
+				grMAvailable.today_s_dosage = todays_dosage;
+				grMAvailable.today_s_qty = todays_qty;
+				grMItem.qty_available = todays_qty;
+				grMAvailable.order_today = order_today;
+				grMAvailable.available_after_2_days = available_after_2_days;
+				
+				/*gs.addInfoMessage('Dosage ' + todays_dosage);
+				gs.addInfoMessage('Todays Qty ' + todays_qty);
+				gs.addInfoMessage('Qty availabale ' + todays_qty);*/
+			}
+			grMAvailable.update();
+			grMItem.update();
+			//gs.addInfoMessage('Completed calculation for tablet ' + grAvailable.item.getDisplayValue());
+		}
+	},
+	
+	kitchen: function() {
+		//Get value of property and Convert to Int
+		var propvalue = parseInt(gs.getProperty('x_171481_homeorder.item.orderdays'),10);
+		
+		var grKAvailable = new GlideRecord('x_171481_homeorder_availability');
+		grKAvailable.addQuery('type','Kitchen');
+		grKAvailable.query();
+		while(grKAvailable.next())
+			{
+			//gs.addInfoMessage('Calculating availability for Tablet ' + grAvailable.item.getDisplayValue());
+		
+			var grKItem = new GlideRecord('x_171481_homeorder_item');
+// 			grItem.addQuery('type','Kitchen');
+			grKItem.addQuery('name', grKAvailable.item.getDisplayValue());
+			grKItem.query();
+		
+			if(grKItem.next()){
+				//var todays_dosage = grItem.dosage_qty_used * grItem.frequency;
+				var todays_qty =  grKItem.qty_available -  1;
+				var order_today = false;
+				var available_after_2_days = false;
+				
+				if(todays_qty <= propvalue)
+					{
+					order_today = true;
+					available_after_2_days = false;
+				}
+				else
+					{
+					order_today = false;
+					available_after_2_days = true;
+				}
+				
+// 				grKAvailable.today_s_dosage = todays_dosage;
+				grKAvailable.today_s_qty = todays_qty;
+				grKItem.qty_available = todays_qty;
+				grKAvailable.order_today = order_today;
+				grKAvailable.available_after_2_days = available_after_2_days;
+				
+				/*gs.addInfoMessage('Dosage ' + todays_dosage);
+				gs.addInfoMessage('Todays Qty ' + todays_qty);
+				gs.addInfoMessage('Qty availabale ' + todays_qty);*/
+			}
+			grKAvailable.update();
+			grKItem.update();
+			//gs.addInfoMessage('Completed calculation for tablet ' + grAvailable.item.getDisplayValue());
+		}
+	},
+		
+	type: 'CalcuAvailQty'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-09 03:43:45</sys_created_on>
+        <sys_id>31b0bd6f0f8c5b00899c3e4ce1050e7d</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>CalcuAvailQty</sys_name>
+        <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+        <sys_update_name>sys_script_include_31b0bd6f0f8c5b00899c3e4ce1050e7d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-02-09 06:57:45</sys_updated_on>
+    </sys_script_include>
+</record_update>

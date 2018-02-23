@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>oauth2</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description/>
+        <name>Bit.ly /shorten</name>
+        <oauth2_profile display_value="Bit.ly default_profile">1cdc02e20f941300899c3e4ce1050ef8</oauth2_profile>
+        <protocol_name/>
+        <rest_endpoint>https://api-ssl.bitly.com/v3/shorten</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-18 13:28:29</sys_created_on>
+        <sys_id>3c2e46260fd41300899c3e4ce1050eae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bit.ly /shorten</sys_name>
+        <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+        <sys_update_name>sys_rest_message_3c2e46260fd41300899c3e4ce1050eae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-02-18 13:28:29</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

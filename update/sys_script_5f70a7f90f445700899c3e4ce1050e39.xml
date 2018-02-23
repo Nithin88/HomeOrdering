@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_171481_homeorder_slack_events</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Process Slack Payload</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var payloadObject = JSON.parse(current.payload);
+	var match = payloadObject.event.text.match(/:([^>]+)/)[1];
+	var slackMessage = '';
+	var slchannel = gs.urlEncode(payloadObject.event.channel);
+	
+	var grAvail = new GlideRecord('x_171481_homeorder_availability');
+	grAvail.addQuery('patient', match);
+	if(slchannel == 'C93M774D6')
+	grAvail.addQuery('type', 'Medicine');
+	else
+	grAvail.addQuery('type', '!=', 'Medicine');
+	grAvail.orderByDesc('order_today');
+	grAvail.query();
+	var cnt = grAvail.getRowCount();
+	var orderMessage_Hdr = '\n' + 'Place order today ' + '\n' + '-----------------' + '\n';
+	var AvailMessage_Hdr = 'Available for next 2 days ' + '\n' + '-------------------------' + '\n';
+	orderMessage = '';
+	AvailMessage = '';
+	while(grAvail.next())
+		{
+		if(grAvail.order_today){
+			if(grAvail.type == 'Medicine')
+			orderMessage = orderMessage + (grAvail.item.getDisplayValue() + ' # of sheets ' + (grAvail.qty_to_order / grAvail.tablets_per_sheet) + ' current qty is ' + grAvail.today_s_qty + '\n');
+			else
+				orderMessage = orderMessage + (grAvail.item.getDisplayValue() + ' Buy ' + grAvail.qty_to_buy + ' Finishes in ' + grAvail.today_s_qty + ' day/s \n');
+		}
+		else{
+			if(grAvail.type == 'Medicine')
+			AvailMessage = AvailMessage + (grAvail.item.getDisplayValue() + ' qty is ' + grAvail.today_s_qty + '\n');
+			else
+				AvailMessage = AvailMessage + (grAvail.item.getDisplayValue() + ' for ' + grAvail.today_s_qty + ' day/s \n');
+	}
+		}
+	
+	slackMessage = orderMessage_Hdr + orderMessage + '\n\n' + AvailMessage_Hdr + AvailMessage ;
+		
+	var si = new SlackRestApi();
+	si.slackapi(slackMessage, slchannel);
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-04 01:28:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5f70a7f90f445700899c3e4ce1050e39</sys_id>
+        <sys_mod_count>65</sys_mod_count>
+        <sys_name>Process Slack Payload</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+        <sys_update_name>sys_script_5f70a7f90f445700899c3e4ce1050e39</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-02-10 10:27:00</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=5f70a7f90f445700899c3e4ce1050e39"/>
+</record_update>

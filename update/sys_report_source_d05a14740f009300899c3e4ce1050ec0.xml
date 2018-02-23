@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_report_source">
+    <sys_report_source action="INSERT_OR_UPDATE">
+        <description/>
+        <display>Medicines to be ordered (Availability)</display>
+        <filter table="x_171481_homeorder_availability">order_today=true<item endquery="false" field="order_today" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        </filter>
+        <name>Medicines to be ordered</name>
+        <sys_class_name>sys_report_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-31 08:15:47</sys_created_on>
+        <sys_id>d05a14740f009300899c3e4ce1050ec0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Medicines to be ordered (Availability)</sys_name>
+        <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+        <sys_update_name>sys_report_source_d05a14740f009300899c3e4ce1050ec0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-31 08:15:47</sys_updated_on>
+        <table>x_171481_homeorder_availability</table>
+    </sys_report_source>
+</record_update>

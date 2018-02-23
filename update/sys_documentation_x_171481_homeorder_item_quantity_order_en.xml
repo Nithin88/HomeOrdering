@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="quantity_order" label="Quantity(order)" language="en" table="x_171481_homeorder_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>quantity_order</element>
+            <help/>
+            <hint/>
+            <label>Quantity(order)</label>
+            <language>en</language>
+            <name>x_171481_homeorder_item</name>
+            <plural>Quantity(order)</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-02-10 02:08:56</sys_created_on>
+            <sys_id>ed56aa770f001300899c3e4ce1050e8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Quantity(order)</sys_name>
+            <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+            <sys_update_name>sys_documentation_x_171481_homeorder_item_quantity_order_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-02-10 02:08:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

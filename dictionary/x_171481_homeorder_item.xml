@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Item" max_length="40" name="x_171481_homeorder_item" type="collection">
+        <element attributes="barcode" label="Barcode" max_length="40" name="barcode" type="string"/>
+        <element label="Dosage / Qty used" max_length="40" name="dosage_qty_used" type="float"/>
+        <element label="Frequency" max_length="40" name="frequency" type="float"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element label="Qty available" max_length="40" name="qty_available" type="float"/>
+        <element label="Quantity (order)" max_length="40" name="qty_ordered" type="integer"/>
+        <element label="Quantity(order)" max_length="40" name="quantity_order" type="string"/>
+        <element label="Type" max_length="40" name="type" type="string"/>
+    </element>
+</database>

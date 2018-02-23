@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Run script</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2018-02-09 03:46:24</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[// var si = new SlackRestApi();
+// si.slackapi(':Indira', 'C8VSGKX99');
+// si.slackapi(':navodaya-nagar', 'C8VSGKX99');
+
+var si = new CalcuAvailQty();
+// si.medicine();
+si.kitchen();
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-09 03:47:07</sys_created_on>
+        <sys_id>1b037d6f0f8c5b00899c3e4ce1050e81</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Run script</sys_name>
+        <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+        <sys_update_name>sysauto_script_1b037d6f0f8c5b00899c3e4ce1050e81</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-02-09 09:35:26</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

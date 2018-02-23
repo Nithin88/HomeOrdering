@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="frequency" label="Frequency" language="en" table="x_171481_homeorder_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>frequency</element>
+            <help/>
+            <hint/>
+            <label>Frequency</label>
+            <language>en</language>
+            <name>x_171481_homeorder_item</name>
+            <plural>Frequencies</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-31 02:36:27</sys_created_on>
+            <sys_id>f6bc0be00f0c5300899c3e4ce1050e98</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Frequency</sys_name>
+            <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+            <sys_update_name>sys_documentation_x_171481_homeorder_item_frequency_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-31 02:36:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

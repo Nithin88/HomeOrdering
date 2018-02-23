@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Availability" max_length="40" name="x_171481_homeorder_availability" type="collection">
+        <element label="Available for next 2 days" max_length="40" name="available_after_2_days" type="boolean"/>
+        <element label="Days before order" max_length="40" name="days_before_order" type="integer"/>
+        <element display="true" label="Item" max_length="32" name="item" reference="x_171481_homeorder_item" type="reference"/>
+        <element label="Order today" max_length="40" name="order_today" type="boolean"/>
+        <element label="Patient" max_length="40" name="patient" type="string"/>
+        <element label="Qty to buy" max_length="40" name="qty_to_buy" type="string"/>
+        <element label="Qty to buy" max_length="40" name="qty_to_order" type="integer"/>
+        <element label="Tablets per sheet" max_length="40" name="tablets_per_sheet" type="integer"/>
+        <element label="Today's dosage qty" max_length="40" name="today_s_dosage" type="float"/>
+        <element label="Qty Available EOD" max_length="40" name="today_s_qty" type="float"/>
+        <element label="Type" max_length="40" name="type" type="string"/>
+        <index name="index">
+            <element name="item"/>
+        </index>
+    </element>
+</database>

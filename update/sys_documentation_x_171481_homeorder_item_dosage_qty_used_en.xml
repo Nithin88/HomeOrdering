@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="dosage_qty_used" label="Dosage / Qty used" language="en" table="x_171481_homeorder_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>dosage_qty_used</element>
+            <help/>
+            <hint/>
+            <label>Dosage / Qty used</label>
+            <language>en</language>
+            <name>x_171481_homeorder_item</name>
+            <plural>Dosage / Qty used</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-31 02:45:59</sys_created_on>
+            <sys_id>66ee8f640f0c5300899c3e4ce1050e2c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Dosage / Qty used</sys_name>
+            <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+            <sys_update_name>sys_documentation_x_171481_homeorder_item_dosage_qty_used_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-31 02:45:59</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Scheduled Message to Slack</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2018-02-06 02:11:16</run_start>
+        <run_time>1970-01-01 02:30:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var si = new SlackRestApi();
+si.slackapi(':Indira', 'C93M774D6');
+si.slackapi(':navodaya-nagar','C96GFQCP4');]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-06 02:11:53</sys_created_on>
+        <sys_id>ac800e260f80d700899c3e4ce1050edd</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Scheduled Message to Slack</sys_name>
+        <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+        <sys_update_name>sysauto_script_ac800e260f80d700899c3e4ce1050edd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-02-09 09:22:25</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

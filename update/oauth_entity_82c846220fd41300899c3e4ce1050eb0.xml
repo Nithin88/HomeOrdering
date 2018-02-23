@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="oauth_entity">
+    <oauth_entity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url>https://bitly.com/oauth/authorize</auth_url>
+        <certificate_url/>
+        <client_id>9b316c55a892e2650b76d206cff9569f6798c574</client_id>
+        <client_secret>BVErim1gdVfKliMCuJp7Y0tKLFdzRCbLbu0x6qnSpMhQb25giqYES3sxpJr4TKMY</client_secret>
+        <client_uuid>f9c846220fd41300899c3e4ce1050e7e</client_uuid>
+        <comments/>
+        <default_grant_type>authorization_code</default_grant_type>
+        <id_token_lifespan>0</id_token_lifespan>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <name>Bit.ly</name>
+        <oauth_api_script display_value="OAuthBitlyHandler">0c9252e60fd41300899c3e4ce1050e2d</oauth_api_script>
+        <redirect_url>https://dev31650.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-18 13:20:45</sys_created_on>
+        <sys_id>82c846220fd41300899c3e4ce1050eb0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Bit.ly</sys_name>
+        <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+        <sys_update_name>oauth_entity_82c846220fd41300899c3e4ce1050eb0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-02-18 13:53:37</sys_updated_on>
+        <token_url>https://api-ssl.bitly.com/oauth/access_token</token_url>
+        <type>oauth_provider</type>
+        <user/>
+    </oauth_entity>
+</record_update>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_171481_homeorder_item</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create avail record</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	// Add your code here
+	var grCUAvail = new GlideRecord('x_171481_homeorder_availability');
+	grCUAvail.initialize();
+	//grCUAvail.item = current.name.getDisplayValue();
+	grCUAvail.item = current.sys_id;
+	grCUAvail.type = current.type;
+	if(current.type=='Medicine'){
+		grCUAvail.patient = 'Indira';
+		grCUAvail.today_s_dosage = current.dosage_qty_used;
+		grCUAvail.qty_to_order = current.qty_ordered;
+	}
+	else if(current.type=='Kitchen'){
+		grCUAvail.patient = 'navodaya-nagar';
+		grCUAvail.qty_to_buy = current.quantity_order;
+	}
+	gs.addInfoMessage('Item is ' + grCUAvail.item + '\n Patient is ' + grCUAvail.patient + '\n Order is ' + grCUAvail.qty_to_order );
+	grCUAvail.insert();
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-10 02:50:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a5eda6fb0f001300899c3e4ce1050ee5</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Create avail record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+        <sys_update_name>sys_script_a5eda6fb0f001300899c3e4ce1050ee5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-02-10 10:09:08</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=a5eda6fb0f001300899c3e4ce1050ee5"/>
+</record_update>

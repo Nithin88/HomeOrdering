@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_fn_param_defs">
+    <sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE">
+        <name>access_token</name>
+        <order>100</order>
+        <rest_message_function display_value="Default GET">b59e026e0f541300899c3e4ce1050ec0</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_param_defs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-18 15:31:09</sys_created_on>
+        <sys_id>678a2e6a0f181300899c3e4ce1050e04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>access_token</sys_name>
+        <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+        <sys_update_name>sys_rest_message_fn_param_defs_678a2e6a0f181300899c3e4ce1050e04</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-02-18 15:31:09</sys_updated_on>
+        <value>e0c39c2f8412475157334e573696c4e2fbdaa145</value>
+    </sys_rest_message_fn_param_defs>
+</record_update>

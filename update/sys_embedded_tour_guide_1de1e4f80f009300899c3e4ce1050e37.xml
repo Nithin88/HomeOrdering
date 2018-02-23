@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_tour_guide">
+    <sys_embedded_tour_guide action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <autolaunch_order>0</autolaunch_order>
+        <context>x_171481_homeorder_item_list</context>
+        <description/>
+        <name>How to manage daily Medicine</name>
+        <options/>
+        <roles>x_171481_homeorder.availability_user,x_171481_homeorder.item_user,x_171481_homeorder.purchaseorder_user,admin</roles>
+        <sys_class_name>sys_embedded_tour_guide</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-31 08:48:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1de1e4f80f009300899c3e4ce1050e37</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>How to manage daily Medicine</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
+        <sys_update_name>sys_embedded_tour_guide_1de1e4f80f009300899c3e4ce1050e37</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-31 09:25:53</sys_updated_on>
+    </sys_embedded_tour_guide>
+</record_update>
