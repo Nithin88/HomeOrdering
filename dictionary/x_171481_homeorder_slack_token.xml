@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Slack token" max_length="40" name="x_171481_homeorder_slack_token" type="collection">
+        <element label="active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="token" max_length="50" name="token" type="string"/>
+    </element>
+</database>

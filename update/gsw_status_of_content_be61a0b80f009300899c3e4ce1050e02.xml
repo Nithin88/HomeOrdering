@@ -14,13 +14,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-01-31 08:46:27</sys_created_on>
         <sys_id>be61a0b80f009300899c3e4ce1050e02</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>0</sys_name>
         <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
         <sys_update_name>gsw_status_of_content_be61a0b80f009300899c3e4ce1050e02</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-01-31 08:46:28</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-03-18 07:53:08</sys_updated_on>
     </gsw_status_of_content>
 </record_update>

@@ -4,7 +4,7 @@
         <active>true</active>
         <category/>
         <content><![CDATA[ <h1 class="title topictitle1">View dashboards </h1>  <div class="body conbody">  <p class="p"><span class="ph">Responsive dashboards enable all users to share widgets such            as reports and <span class="ph">Performance Analytics</span> visualizations.</span></p>  <div class="p"> Use the <span class="ph">Performance Analytics</span> widgets on the        dashboard to visualize data over time, analyze your business processes, and identify areas        of improvement. With solutions, you can get value from <span class="ph"><span class="ph">Performance Analytics</span></span> for your        application with minimal setup. <div class="note note"><span class="notetitle">Note:</span> Solutions include some dashboards that are inactive by          default. You can activate these dashboards to make them visible to end users according to          your business needs.</div></div>  <p class="p">View the provided dashboards for an overview of your data to gain new insight into the   performance of your processes.</p> </div>]]></content>
-        <last_sync>2018-02-16 04:32:11</last_sync>
+        <last_sync>2018-04-02 04:34:08</last_sync>
         <modifier>setup</modifier>
         <name>$pa_dashboard-setup</name>
         <page>$pa_dashboard</page>
@@ -19,14 +19,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d19078810f4c9300899c3e4ce1050e66</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>$pa_dashboard-setup</sys_name>
         <sys_package display_value="Home Ordering" source="x_171481_homeorder">c5e6cf200fc45300899c3e4ce1050ea9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Home Ordering">c5e6cf200fc45300899c3e4ce1050ea9</sys_scope>
         <sys_update_name>sys_embedded_help_content_d19078810f4c9300899c3e4ce1050e66</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-02-16 04:32:11</sys_updated_on>
+        <sys_updated_on>2018-04-02 04:34:08</sys_updated_on>
         <version>k</version>
     </sys_embedded_help_content>
     <sys_translated_text action="delete_multiple" query="documentkey=d19078810f4c9300899c3e4ce1050e66"/>
